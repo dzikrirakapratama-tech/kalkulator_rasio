@@ -1,0 +1,125 @@
+/* ======== FONT PREMIUM ======== */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Poppins:wght@300;400;600&display=swap');
+
+/* ======== GLOBAL STYLE ======== */
+body {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle at center, #0d0d0d, #000000);
+    color: #00eaff;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+/* ======== TITLE FUTURISTIK ======== */
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 3rem;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 4px;
+    color: #00f0ff;
+    text-shadow: 0 0 10px #00f0ff, 0 0 20px #0088ff;
+    animation: glowPulse 2.5s infinite ease-in-out;
+}
+
+@keyframes glowPulse {
+    0% { text-shadow: 0 0 5px #00f0ff; }
+    50% { text-shadow: 0 0 20px #00f0ff, 0 0 60px #0088ff; }
+    100% { text-shadow: 0 0 5px #00f0ff; }
+}
+
+/* ======== CARD UTAMA ======== */
+.card {
+    width: 90%;
+    max-width: 450px;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 15px;
+    background: rgba(0, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 255, 255, 0.3);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+    animation: cardPulse 3.5s infinite ease-in-out;
+}
+
+@keyframes cardPulse {
+    0% { box-shadow: 0 0 10px rgba(0, 255, 255, 0.2); }
+    50% { box-shadow: 0 0 25px rgba(0, 255, 255, 0.6); }
+    100% { box-shadow: 0 0 10px rgba(0, 255, 255, 0.2); }
+}
+
+/* ======== INPUT FUTURISTIK ======== */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    border-radius: 10px;
+    border: 1px solid #00eaff;
+    background: transparent;
+    color: #00eaff;
+    font-size: 1.1rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    box-shadow: 0 0 15px #00eaff;
+    transform: scale(1.02);
+}
+
+/* ======== TOMBOL PREMIUM ======== */
+button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 18px;
+    background: transparent;
+    border: 2px solid #00eaff;
+    color: #00eaff;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+button:hover {
+    box-shadow: 0 0 25px #00eaff, inset 0 0 10px #00eaff;
+    transform: scale(1.05);
+}
+
+/* Tombol animasi berdenyut */
+button:active {
+    animation: pulseBtn 0.3s ease;
+}
+
+@keyframes pulseBtn {
+    0% { transform: scale(1); }
+    50% { transform: scale(0.9); }
+    100% { transform: scale(1); }
+}
+
+/* ======== HASIL ======== */
+.result-box {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #00eaff;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.3rem;
+    animation: cardPulse 3s infinite ease-in-out;
+}
+
+/* ======== FOOTER PREMIUM ======== */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    font-family: 'Orbitron';
+    opacity: 0.6;
+}
